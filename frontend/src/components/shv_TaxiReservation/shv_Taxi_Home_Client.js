@@ -19,7 +19,7 @@ export default class TaxiHomeClient extends Component {
                     <h1 className="mb-3">Hilton</h1>
                     <h4 className="mb-3">Taxi Reservation System</h4><br/>
                     <a className="btn btn-outline-light btn-lg" href="/BookTaxi" role="button">Click Here To Reserve Your Taxi</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a className="btn btn-outline-light btn-lg" href="/BookTaxi" role="button">Click Here To View Reserved Taxis</a>
+                    <a className="btn btn-outline-light btn-lg" href="/AllTaxi" role="button">Click Here To View Reserved Taxis</a>
                     <br/><br/><br/>
                     </div>
 
