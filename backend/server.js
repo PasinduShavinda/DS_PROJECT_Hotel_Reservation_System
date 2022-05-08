@@ -13,7 +13,7 @@ app.use(taxiRouts);
 
 const PORT = 8001;
 
-const DB_URL = 'mongodb+srv://dstedstest12:dstst12ab@testdscluster.2cmqc.mongodb.net/DStestDB?retryWrites=true&w=majority';
+const DB_URL = 'mongodb+srv://dsProj123:dsp2yAbc@dsprojectcluster.iiyxv.mongodb.net/DSDB?retryWrites=true&w=majority';
 
 mongoose.connect(DB_URL)
 .then(()=>{
