@@ -12,6 +12,8 @@ export default class Shv_Taxi_Reservations_Home_Page extends Component {
           
           <a href = '/TaxiAdminClient'><button type="button" class="btn btn-primary btn-lg btn-block">Taxi Client Home Page</button></a><br/><br/>
 
+          <a href = '/AdminTaxiReport'><button type="button" class="btn btn-primary btn-lg btn-block">Admin Taxi Reservation Report</button></a><br/><br/>
+
           </center>
       </div>
     )
