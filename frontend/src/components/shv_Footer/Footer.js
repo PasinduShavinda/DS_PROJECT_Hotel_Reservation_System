@@ -27,7 +27,7 @@ const Footer = () => {
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>Furniture</h2>
+            <a href = "/location"><h2>Location</h2></a>
    
             
           </div>
