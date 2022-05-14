@@ -1,4 +1,4 @@
-input {
+/* .ud_input {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -8,7 +8,7 @@ input {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s;
-}
+} */
 
 from {
   transform: rotate(0deg);
@@ -18,18 +18,18 @@ to {
   transform: rotate(360deg);
 }
 
-.btn-success btn-lg {
+.ud_btn-success btn-lg {
   background-color: blue;
 }
 
-.bg-img {
+/* .ud_bg-img {
   border-radius: 50%;
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.sucess-img {
+.ud_sucess-img {
   width: 500px;
   border-radius: 20%;
 }

@@ -9,7 +9,7 @@ import TaxiHomeAdmin from "./components/shv_TaxiReservation/shv_Taxi_Home_Admin"
 import TaxiHomeClient from "./components/shv_TaxiReservation/shv_Taxi_Home_Client";
 import Shv_AdminTaxiReport from "./components/shv_TaxiReservation/shv_admin_taxi_reservation_report";
 import LocationService from "./components/shv_LocationService/LocationService";
-import Home from "./components/Home";
+// import Home from "./components/Home";
 import Shv_Taxi_Booking_Home from "./components/shv_TaxiReservation/shv_Taxi_Booking_Home";
 import Footer from "./components/shv_Footer/Footer";
 
@@ -25,7 +25,6 @@ import ReservationDetails from "./components/sug_RoomReservations/sug_reservatio
 import RoomBook from "./components/sug_RoomReservations/sug_roombook";
 
 //.........udara.....................................................
-//import "bootstrap/dist/css/bootstrap.min.css";
 import CardPayment from "./components/UD_Home/payment/CardPayment";
 import CardPaymentSucces from "./components/UD_Home/payment/CardPaymentSucces";
 import PaymentHome from "./components/UD_Home/payment/PaymentHome";
@@ -48,21 +47,6 @@ export default class App extends Component {
     return (
       <div>
         <BrowserRouter>
-          <Route
-            path="/Taxi_Reservations_Home"
-            exact
-            component={Shv_Taxi_Reservations_Home_Page}
-          />
-          <Route path="/AllTaxi" component={Shv_All_Taxi_Reservations} />
-          <Route path="/BookTaxi" component={Shv_Create_Taxi_Reservations} />
-          <Route
-            path="/UpdateTaxi/:id"
-            component={Shv_Update_Taxi_Reservations}
-          />
-          <Route path="/ViewTaxi/:id" component={Shv_View_Taxi_Reservations} />
-          <Route path="/TaxiAdminHome" component={TaxiHomeAdmin} />
-          <Route path="/TaxiAdminClient" component={TaxiHomeClient} />
-
           {/* ..........udara............. */}
           {/* Payclient */}
           <Route path="/CardPay" component={CardPayment}></Route>
@@ -91,8 +75,9 @@ export default class App extends Component {
           <Route path="/cardReport" exact component={CardReport}></Route>
           {/* <Route path="/cardDetails" exact component={CardDetailsAdmin}></Route> */}
 
+          {/* shv............................................................................ */}
           <Route
-            path="/TaxiHome"
+            path="/Taxi_Reservations_Home"
             exact
             component={Shv_Taxi_Reservations_Home_Page}
           />

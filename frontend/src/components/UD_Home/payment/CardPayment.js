@@ -256,8 +256,9 @@ class CardPayment extends Component {
           Demo
         </button>
         <br></br>
+        <br></br>
         <div className="form-group">
-          <a class="btn btn-outline-primary btn-lg" href="/">
+          <a class="btn btn-outline-primary btn-lg" href="/payHome">
             Back
           </a>
         </div>

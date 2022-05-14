@@ -10,7 +10,7 @@ class CardPaymentSucces extends Component {
       <center>
         <br />
         <br />
-        <img className="sucess-img" src={BG} alt="bg img" />
+        <img className="ud_sucess-img " src={BG} alt="bg img" />
         <br />
         <br />
         <h1 style={{ color: "#000080", fontStyle: "italic" }}>

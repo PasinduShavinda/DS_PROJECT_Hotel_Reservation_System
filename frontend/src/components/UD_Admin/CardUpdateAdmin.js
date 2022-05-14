@@ -157,10 +157,11 @@ class CardUpdateAdmin extends Component {
           focused={this.state.focus}
         />
         <br />
-        <h2>Update Details Here</h2>
+        <h2>Update Card Details Here</h2>
 
         <br />
         <form style={{ width: "40%" }}>
+          <label>Enter Payment: </label>
           <input
             class="form-control"
             type="tel"
@@ -171,7 +172,7 @@ class CardUpdateAdmin extends Component {
             onFocus={this.handleInputFocus}
           />
           <br />
-          <br />
+          <label>Enter Card Number: </label> <br />
           <input
             class="form-control"
             type="tel"
@@ -182,7 +183,7 @@ class CardUpdateAdmin extends Component {
             onFocus={this.handleInputFocus}
           />
           <br />
-          <br />
+          <label> Enter customer Name: </label> <br />
           <input
             class="form-control"
             type="text"
@@ -193,7 +194,7 @@ class CardUpdateAdmin extends Component {
             onFocus={this.handleInputFocus}
           />
           <br />
-          <br />
+          <label>Enter MM/YY: </label> <br />
           <input
             class="form-control"
             type="text"
@@ -204,7 +205,7 @@ class CardUpdateAdmin extends Component {
             onFocus={this.handleInputFocus}
           />
           <br />
-          <br />
+          <label>Enter CVC: </label> <br />
           <input
             class="form-control"
             type="tel"

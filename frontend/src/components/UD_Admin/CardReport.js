@@ -116,6 +116,7 @@ class CardReport extends Component {
           <b>Downlod Report PDF</b>
         </button>
         <br></br>
+        <br></br>
         <div className="form-group">
           <a class="btn btn-outline-primary btn-lg" href="/cardHomeAdmin">
             Back

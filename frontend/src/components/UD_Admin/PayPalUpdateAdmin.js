@@ -146,42 +146,44 @@ class PayPalUpdateAdmin extends Component {
                 <input
                   type="tel"
                   name="cpayment"
+                  placeholder="Payment"
                   onChange={this.handleInputChange}
                   value={this.state.cpayment}
                   className="form-control"
                 />
                 <br />
-                <label>Customer Name : </label>
+                <label>Enter Customer Name : </label>
                 <br />
                 <input
                   type="text"
                   name="cname"
+                  placeholder="Customer Name"
                   onChange={this.handleInputChange}
                   value={this.state.cname}
                   className="form-control"
                 />
                 <br />
-                <label>Email Address: </label> <br />
+                <label>Enter Email Address: </label> <br />
                 <input
                   type="text"
                   name="cemail"
+                  placeholder="Email Address"
                   onChange={this.handleInputChange}
                   value={this.state.cemail}
                   className="form-control"
                 />
                 <br />
-                <div className="form-group">
-                  <label>Password: </label>
-                  <br />
-                  <input
-                    type="password"
-                    name="cpassword"
-                    onChange={this.handleInputChange}
-                    value={this.state.cpassword}
-                    className="formpwd"
-                  />
-                  <br />
-                </div>
+                <label> Enter Password: </label>
+                <br />
+                <input
+                  type="password"
+                  name="cpassword"
+                  placeholder="Password"
+                  onChange={this.handleInputChange}
+                  value={this.state.cpassword}
+                  className="form-control"
+                />
+                <br />
                 <br></br>
                 <div className="form-group">
                   <button

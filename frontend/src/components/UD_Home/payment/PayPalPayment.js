@@ -43,7 +43,7 @@ class PayPalPayment extends Component {
     //validation start here
     const name = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
     const email = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
-    const card = /^[0-9\b]+$/;
+    const UD_card = /^[0-9\b]+$/;
 
     if (
       cpayment.length === 0 ||
@@ -56,7 +56,7 @@ class PayPalPayment extends Component {
         "Please fill all the information!",
         "error"
       );
-    } else if (!card.test(Number(cpayment))) {
+    } else if (!UD_card.test(Number(cpayment))) {
       swal("Invalid Payment", "Payment cannot contain any Numbers!", "error");
     } else if (!name.test(String(cname))) {
       swal(
@@ -106,7 +106,7 @@ class PayPalPayment extends Component {
         .post("http://localhost:8003/postPaypal/save", Paypal)
         .then((response) => {
           if (response.data.success) {
-            swal("successful");
+            swal("Payment successfully added!");
             this.props.history.push(
               "/palSuccess/" +
                 this.state.cpassword +
@@ -147,78 +147,71 @@ class PayPalPayment extends Component {
             <br></br>
           </center>
           <center>
-            <div className="card" style={{ width: "48rem" }}>
+            <div className="UD_card" style={{ width: "35%" }}>
               <form onSubmit={this.onSubmit} className="payform">
                 <h3>Payments through PayPal</h3>
                 <div className="form-group">
-                  <Link to="https://www.paypal.com/lk/home">
+                  <br></br>
+                  <Link to="https://www.paypal.com">
                     <input
                       type="submit"
                       value="Sign in"
-                      className="btn signIn"
+                      className="form-control"
                     />
                   </Link>
                   <br />
-                  <br />
-                  <label>Enter Payment : </label>
-                  <br />
                   <input
                     type="tel"
+                    placeholder="Enter Payment"
                     onChange={this.changecPaymentHandler}
                     value={this.state.cpayment}
                     className="form-control"
                   />
                   <br />
-                  <label>Customer Name : </label>
-                  <br />
                   <input
                     type="text"
+                    placeholder="Customer Name "
                     onChange={this.changeNameHandler}
                     value={this.state.cname}
                     className="form-control"
                   />
                   <br />
-                  <label>Email Address: </label> <br />
                   <input
                     type="text"
+                    placeholder="Email Address"
                     onChange={this.changeEmailHandler}
                     value={this.state.cemail}
                     className="form-control"
                   />
                   <br />
-                </div>
-                <div className="form-group">
-                  <label>Password: </label>
-                  <br />
                   <input
                     type="password"
+                    placeholder="Password"
                     onChange={this.changePasswordHandler}
                     value={this.state.cpassword}
-                    className="formpwd"
+                    className="form-control"
                   />
-                  <br />
                 </div>
+
                 <br></br>
-                <div className="form-group">
+                <div className="btn btn-outline-primary ">
                   <Link
                     to={"/CardPay/"}
                     value="Pay Rs."
-                    className="btn btn-primary"
+                    className="far fa-check-square"
                     onClick={this.onSubmit}
                   >
                     Pay
                   </Link>
                   <br />
-                  <br />
                 </div>
               </form>
+
               <center>
                 <button
-                  className="btn btn-primary"
+                  className="btn btn-outline-primary"
                   style={{
-                    textDecoration: "none",
-                    color: "white",
-                    width: "15%",
+                    marginTop: "15px",
                   }}
                   onClick={(e) => {
                     this.setState({
@@ -233,18 +226,26 @@ class PayPalPayment extends Component {
                   Demo
                 </button>
                 <br></br>
+                <br></br>
                 <div className="form-group">
-                  <a class="btn btn-outline-primary btn-lg" href="/">
+                  <a class="btn btn-outline-primary btn-lg" href="/payHome">
                     Back
                   </a>
                 </div>
               </center>
             </div>
           </center>
-          <div className="form-group"></div>
-          <br />
-          <br />
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
     );
   }

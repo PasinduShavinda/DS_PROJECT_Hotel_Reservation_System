@@ -123,7 +123,7 @@ class CardHomeAdmin extends Component {
                 <td>{CardPosts.expiry}</td>
 
                 <td>
-                  {/* <a className="btn btn-primary" href="/mail">
+                  {/* <a className="btn UD_btn-primary" href="/mail">
                     <i className="fas fa-edit"></i>&nbsp;Request
                   </a> */}
                   &nbsp; &nbsp;
