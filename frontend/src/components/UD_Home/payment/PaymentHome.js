@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-//import {Form,Button,Carousel,FormControl} from 'react-bootstrap'
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import "../payment/style/CardPayment.css";
 import "../payment/style/PaymentHome.css";
 import BG from "../images/paychoose.gif";

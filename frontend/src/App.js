@@ -55,7 +55,7 @@ export default class App extends Component {
           <Route path="/addpaypal" component={PayPalPayment}></Route>
           <Route path="/palSuccess" component={PayPalSuccess}></Route>
 
-          {/* Admin */}
+          {/* Admin.................................... */}
           <Route path="/adminHome" component={adminHome}></Route>
           {/* paypal */}
           <Route path="/payPalHomeAdmin" component={PayPalHomeAdmin}></Route>
