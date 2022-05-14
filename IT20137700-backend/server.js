@@ -15,7 +15,7 @@ const RoomRoutes = require('./routes/sug_room-reservations');
 app.use(RoomRoutes); 
 
 
-const DB_URL=`mongodb+srv://sugandhi:uUijkSkBnUQ11BxC@cluster0.mkxhp.mongodb.net/Hotel_Room_DB?retryWrites=true&w=majority`;
+const DB_URL=`mongodb+srv://dsProj123:dsp2yAbc@dsprojectcluster.iiyxv.mongodb.net/DSDB?retryWrites=true&w=majority`;
 mongoose.connect(DB_URL)
 .then(()=>{
     console.log('DB connected')

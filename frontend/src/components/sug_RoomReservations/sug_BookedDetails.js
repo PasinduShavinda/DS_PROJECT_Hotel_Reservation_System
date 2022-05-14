@@ -196,7 +196,7 @@ onDelete= (id) =>{
 <h5> Service chararges and meal cost can pay before the Checkout</h5>
 
 
-<button class="btn btn-outline-dark btn-lg">Pay Now</button>
+<a href = "/payHome"><button class="btn btn-outline-dark btn-lg">Pay Now</button></a>
 &nbsp;&nbsp;&nbsp;
 <a className="btn btn-outline-dark btn-lg" href={`/editReservation/${reservations._id}`}>
      <i className="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Edit
