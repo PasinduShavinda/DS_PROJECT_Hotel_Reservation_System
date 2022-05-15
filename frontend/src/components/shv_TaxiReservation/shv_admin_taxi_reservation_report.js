@@ -75,13 +75,13 @@ export default class Shv_AdminTaxiReport extends Component {
 
     //new document in jspdf
     var doc = new jsPdf('l','pt', 'a3');
-
-    doc.text(600, 20 ,'Taxi Reservation Report', { align: 'center' });
+    var date = new Date()
+    doc.text("Generated Date : " + date,24,24)
+    doc.text(600, 40 ,'Taxi Reservation Report', { align: 'center', marginTop:50 });
     doc.autoTable({  html:'#taxiReservation-table' })
 
     doc.autoTable({
       columnStyles: { europe: { halign: 'center' } }, 
-      margin: { top: 10 },
     })
 
     //save the pdf

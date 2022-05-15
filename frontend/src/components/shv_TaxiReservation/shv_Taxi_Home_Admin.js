@@ -18,7 +18,7 @@ export default class TaxiHomeAdmin extends Component {
                     <div className="text-white"><br/>
                     <h1 className="mb-3">Hilton</h1>
                     <h4 className="mb-3">Hotel Reservation System</h4><br/>
-                    <a className="btn btn-outline-light btn-lg" href="/AllTaxi" role="button">Manage Taxi Reservation</a>
+                    <a className="btn btn-outline-light btn-lg" href="/AdminTaxiReport" role="button">Manage Taxi Reservation</a>
                     <br/><br/><br/>
                     </div>
 

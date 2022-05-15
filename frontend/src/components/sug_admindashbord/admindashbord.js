@@ -22,8 +22,8 @@ export default class admindashbord extends Component {
                             <i class="fas fa-3x fa fa-bed tm-app-feature-icon"></i>
                         </div>
                         <div class="tm-app-feature-description-box">
-                            <h3 class="mb-4 tm-app-feature-title">Room Reservation details</h3>
-                            <p class="tm-app-feature-description">Get the All  Room Reservationdetails and Update delete the reservation.</p>
+                            <h4 class="mb-4 tm-app-feature-title" style={{fontSize:'20px'}}>Room Reservation Management</h4>
+                            <p class="tm-app-feature-description">Get the All  Room Reservation details and Update delete the reservation.</p>
                         </div>
                     </div>
                     </a>
@@ -37,7 +37,7 @@ export default class admindashbord extends Component {
                             <i class="fas fa-3x fa fa-university tm-app-feature-icon"></i>
                         </div>
                         <div class="tm-app-feature-description-box">
-                            <h3 class="mb-4 tm-app-feature-title">Reception Hall  Details</h3>
+                            <h3 class="mb-4 tm-app-feature-title" style={{fontSize:'20px'}}>Reception Hall Management</h3>
                             <p class="tm-app-feature-description">Get the All  Reseption hall reservation details and Update delete the reservations.</p>
                         </div>
                     </div>
@@ -46,13 +46,13 @@ export default class admindashbord extends Component {
                 
 
                 <div class="col-lg-6">
-                <a href='/#' style={{textDecoration:'none' ,color:'black'}}>
+                <a href='/TaxiAdminHome' style={{textDecoration:'none' ,color:'black'}}>
                     <div class="tm-bg-white-transparent tm-app-feature-box">
                         <div class="tm-app-feature-icon-container">
                             <i class="fas fa-3x fa fa-taxi tm-app-feature-icon"></i>
                         </div>
                         <div class="tm-app-feature-description-box">
-                            <h3 class="mb-4 tm-app-feature-title">Taxi Reservation Details</h3>
+                            <h3 class="mb-4 tm-app-feature-title" style={{fontSize:'20px'}}>Taxi Reservation Management</h3>
                             <p class="tm-app-feature-description"> Get all Taxi Booking datails and Update delete and View each Booking</p>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ export default class admindashbord extends Component {
                             <i class="fas fa-3x fa fa-money tm-app-feature-icon"></i>
                         </div>
                         <div class="tm-app-feature-description-box">
-                            <h3 class="mb-4 tm-app-feature-title">Payment Details</h3>
+                            <h3 class="mb-4 tm-app-feature-title" style={{fontSize:'20px'}}>Payment Management</h3>
                             <p class="tm-app-feature-description">view all the payment details done by customers and update and delete each payment details</p>
                         </div>
                     </div>

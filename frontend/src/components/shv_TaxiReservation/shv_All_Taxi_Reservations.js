@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import swal from "sweetalert";
-//import Shv_Taxi_NavBar from "../shv_NavBars/shv_Taxi_NavBar";
 
 export default class Shv_All_Taxi_Reservations extends Component {
   constructor(props) {

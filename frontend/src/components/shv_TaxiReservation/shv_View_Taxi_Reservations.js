@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Shv_Taxi_NavBar from '../shv_NavBars/shv_Taxi_NavBar';
+import jsPdf from 'jspdf'
+import 'jspdf-autotable'
 
 export default class Shv_View_Taxi_Reservations extends Component {
   
@@ -29,6 +31,28 @@ export default class Shv_View_Taxi_Reservations extends Component {
 
   }
   
+  //Report pdf generating
+  jsPdfGenerator = () => {
+  
+    //new document in jspdf
+    var doc = new jsPdf('l', 'pt', 'a4');
+    doc.text(350, 40 ,'Reservation Details');
+    var pdfjs = document.querySelector('#taxiReservation');
+    var date = new Date()
+    doc.text("Generated Date : " + date,24,24)
+
+	// Convert HTML to PDF in JavaScript
+	doc.html(pdfjs, {
+		callback: function(doc) {
+			doc.save("Booking Details.pdf");
+		},
+		x: 50,
+		y: 50
+	});
+  }
+
+
+
   render() {
     const {fistName,lastName,mobileNumber,nic,email,typeoftaxi,condition,bookingDate,bookingTime,numberOfPassengers,pickupAddress ,dropOffAddress} = this.state.taxi;
 
@@ -56,7 +80,7 @@ export default class Shv_View_Taxi_Reservations extends Component {
           <h1>Taxi Reservation Details</h1>
           <br/>
 
-          <dl className="row">
+          <dl id = "taxiReservation" className="row">
 
             <dt className="col-sm-2">First Name</dt><br></br>
             <dd className="col-sm-9">{fistName}</dd><br></br>
@@ -96,7 +120,7 @@ export default class Shv_View_Taxi_Reservations extends Component {
 
 
           </dl>
-
+          <button className="btn btn-danger" onClick={this.jsPdfGenerator}>Download PDF</button>
         </div>
       </div>
       </div>
