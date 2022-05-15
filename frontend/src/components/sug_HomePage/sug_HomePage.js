@@ -15,8 +15,9 @@ export default class HomePage extends Component{
      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
        <div class="container">
          <div class="navbar-header">
-         <a class="navbar-brand" href="index.html">Registration</a>
-           <a class="navbar-brand" href="index.html">log in</a>
+         <a class="navbar-brand" href="#">Registration</a>
+           <a class="navbar-brand" href="#">log in</a>
+           <a class="navbar-brand" href="/admindashbord">Admin Dashboard</a>
          </div>
          
        </div>

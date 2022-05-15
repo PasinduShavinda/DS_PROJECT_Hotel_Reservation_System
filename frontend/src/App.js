@@ -42,6 +42,7 @@ import PayPalPeport from "./components/UD_Admin/PayPalReport";
 import CardHomeAdmin from "./components/UD_Admin/CardHomeAdmin";
 import CardUpdateAdmin from "./components/UD_Admin/CardUpdateAdmin";
 import CardReport from "./components/UD_Admin/CardReport";
+import admindashbord from "./components/sug_admindashbord/admindashbord";
 export default class App extends Component {
   render() {
     return (
@@ -109,6 +110,12 @@ export default class App extends Component {
             path="/reservationdetails/:id"
             exact
             component={ReservationDetails}
+          ></Route>
+
+           <Route
+            path="/admindashbord"
+            exact
+            component={admindashbord}
           ></Route>
           <Route path="/bookeddetails" exact component={BookedDetails}></Route>
           <Route path="/roomhomepage" exact component={RoomsHome}></Route>
