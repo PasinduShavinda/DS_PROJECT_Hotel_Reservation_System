@@ -46,7 +46,7 @@ export default class HomePage extends Component{
          <a href="/roomhomepage"><img src="assets/img/portfolio/room.jpg" class="img-responsive"/></a>
        </div>
        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-         <a href="#"><img src="assets/img/portfolio/event.jpg" class="img-responsive"/></a>
+         <a href="/eventHome"><img src="assets/img/portfolio/event.jpg" class="img-responsive"/></a>
        </div>
        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
          <a href="/TaxiAdminClient"><img src="assets/img/portfolio/taxi.jpg" class="img-responsive"/></a>

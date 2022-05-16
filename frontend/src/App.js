@@ -43,6 +43,17 @@ import CardHomeAdmin from "./components/UD_Admin/CardHomeAdmin";
 import CardUpdateAdmin from "./components/UD_Admin/CardUpdateAdmin";
 import CardReport from "./components/UD_Admin/CardReport";
 import admindashbord from "./components/sug_admindashbord/admindashbord";
+
+//Thamodi//
+import eventHomePage from "./components/th_eventBooking/th_eventHomePage";
+import WeddingHall from "./components/th_eventBooking/th_weddingHall";
+import OutdoorFunction from "./components/th_eventBooking/th_outdoorFunction";
+import SpecialActivities from "./components/th_eventBooking/th_specialActivities";
+import AllEventReservations from "./components/th_eventBooking/th_allEventReservation";
+import EventBook from "./components/th_eventBooking/th_eventBooking";
+import EditEventBook from "./components/th_eventBooking/th_editEventBDetails";
+import EventReservationDetails from "./components/th_eventBooking/th_eventReservationDetails";
+
 export default class App extends Component {
   render() {
     return (
@@ -120,6 +131,16 @@ export default class App extends Component {
           <Route path="/bookeddetails" exact component={BookedDetails}></Route>
           <Route path="/roomhomepage" exact component={RoomsHome}></Route>
           <Route path="/" exact component={HomePage}></Route>
+
+          {/*Thamodi*/}
+          <Route path="/eventHome" exact component={eventHomePage}></Route>
+            <Route path="/WeddingHall" exact component={WeddingHall}></Route>
+            <Route path="/OutdoorFunction" exact component={OutdoorFunction}></Route>
+            <Route path="/SpecialActivities" exact component={SpecialActivities}></Route>
+            <Route path="/AllEventReservations" exact component={AllEventReservations}></Route>
+            <Route path="/EventBook" exact component={EventBook}></Route>
+            <Route path="/EditEventBook" exact component={EditEventBook}></Route>
+            <Route path="/EventReservationDetails" exact component={EventReservationDetails}></Route>
         </BrowserRouter>
         <br />
         <br />

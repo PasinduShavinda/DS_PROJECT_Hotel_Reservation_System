@@ -1,0 +1,516 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+/*::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+
+
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+  /* #headerwrap2 {
+	background: url(../../../../public/assets/th_imgs/hotelhome.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#headerwrap2 h1 {
+	color:#ffffff;
+	padding-top: 10px;
+
+	letter-spacing: 4px;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+#headerwrap2 p {
+	color:#ffffff;
+	font-size: 20px;
+	
+}
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+	color: #dce6e4;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #f6fcfa;
+	background-color: transparent;
+	border-bottom: 2px solid #eff4f3
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #eff7f5;
+}
+
+
+
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+/*#headerwrap {
+	background: url(../../../../public/assets/th_imgs/Bed_Home_page.jpeg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+    text-align: center;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+#headerwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#social {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
+}
+
+#social i {
+	font-size: 40px;
+	color: #4a4a4a
+}
+
+#social i:hover {
+	color: #1abc9c
+}
+
+#footerwrap {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	background-color: #2f2f2f;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
+}
+
+#workwrap {	
+	/*background: url(../img/work.jpg) no-repeat center top;*/
+	/*margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#workwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#aboutwrap {	
+	/*background: url(../img/about.jpg) no-repeat center top;*/
+	/*margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 550px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  .sugcontent{
+    
+    background: url("https://www.toptal.com/designers/subtlepatterns/uploads/spikes.png") ;
+   
+    
+    
+    
+  }
+  .sugcontent2{
+    
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwLs2VcCFFjSmxHHKhah6-q1h7L3JV8mWzSg&usqp=CAU") ;
+   
+    
+    
+    
+  }*/
+
+
+  /*Thamodi css*/
+
+  #headerpart {
+	background: url(../../../../public/assets/th_imgs/eventhomebackground.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 150px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+  #headerpart h1 {
+	color:#ffffff;
+	padding-top: 10px;
+  padding-right: 250px;
+	letter-spacing: 4px;
+	font-size: 70px;
+	font-weight: bold;
+  margin-left: 300px;
+  margin-right: 50px;
+}
+
+  #headerpart h3 {
+	color: #000;;
+  padding-right: 280px;
+  text-align: center;
+	letter-spacing: 1px;
+	font-size: 30px;
+	font-weight: bold;
+  margin-left: 300px;
+  
+}
+
+#headerpart button{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: large;
+    font-family: sans-serif;
+    margin-left: 5px;
+}
+
+.introContent{
+    background-color: #262626;
+    text-decoration: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.th_col {
+    float: left;
+    width: 32.63%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .th_row gx-8::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .th_introBtn {
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    color: #f2f2f2;
+    font-size: 20px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    margin-left: 80px;
+  }
+
+  #headerpart2 {
+	background: url(../../../../public/assets/th_imgs/weddinghallbackground.jpg) no-repeat center top;
+	margin-top: -70px;
+  
+	padding-top: 150px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 200px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+  #headerpart2 h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 30px;
+  padding-right: 320px;
+	letter-spacing: 4px;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+#headerpart2 button{
+    margin-right: 280px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.weddingcontent {
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  line-height: 0.4;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.reservationBtn button{
+  background-color: #0c0b0c;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: larger;
+  cursor: pointer;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 680px;
+  margin-bottom: 5px;
+}
+
+.reservationBtn button:hover {
+  background-color: #6d5e6d;
+  color: #000;
+}
+
+#headerpart3 {
+	background: url(../../../../public/assets/th_imgs/outdoorfunctionbackground.jpg) no-repeat center top;
+	margin-top: -70px;
+  
+	padding-top: 150px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 200px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+  #headerpart3 h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 30px;
+  padding-right: 300px;
+  padding-left: 280px;
+	letter-spacing: 4px;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+#headerpart3 button{
+    margin-right: 280px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.outdoorcontent {
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  line-height: 0.4;
+}
+
+#headerpart4 {
+	background: url(../../../../public/assets/th_imgs/outdoorfunctionbackground.jpg) no-repeat center top;
+	margin-top: -70px;
+  
+	padding-top: 150px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 200px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+  #headerpart4 h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 30px;
+  padding-right: 300px;
+  padding-left: 280px;
+	letter-spacing: 4px;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+#headerpart4 button{
+    margin-right: 280px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.specialcontent {
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  line-height: 0.4;
+}
+
+.thformContent{
+   background: url("https://www.toptal.com/designers/subtlepatterns/uploads/spikes.png") ;
+}
