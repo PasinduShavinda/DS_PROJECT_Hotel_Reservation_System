@@ -19,7 +19,7 @@ class PayPalPeport extends Component {
   }
 
   retrievePaypalPosts() {
-    axios.get("http://localhost:8003/postPaypal").then((res) => {
+    axios.get("http://localhost:8280/paypal/getPaypal").then((res) => {
       if (res.data.success) {
         this.setState({
           PaypalPosts: res.data.existingpaypal,
@@ -45,7 +45,7 @@ class PayPalPeport extends Component {
   handleSearchArea = (e) => {
     const searchKey = e.currentTarget.value;
 
-    axios.get("http://localhost:8003/postPaypal").then((res) => {
+    axios.get("http://localhost:8280/paypal/getPaypal").then((res) => {
       if (res.data.success) {
         this.filterData(res.data.existingpaypal, searchKey);
       }

@@ -13,7 +13,7 @@ export default class EventReservationDetails extends Component{
     componentDidMount(){
     
         const id=this.props.match.params.id;
-        axios.get(`http://localhost:8004/postEvent/${id}`).then((res)=>{
+        axios.get(`http://localhost:8280/event/getEvent/${id}`).then((res)=>{
     
             if (res.data.success){
                 this.setState({

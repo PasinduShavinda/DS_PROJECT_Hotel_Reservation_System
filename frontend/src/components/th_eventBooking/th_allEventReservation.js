@@ -17,7 +17,7 @@ export default class AllEventReservations extends Component{
     }
 
     retriveEventReservations(){
-        axios.get("http://localhost:8004/postEvent").then(res=>{
+        axios.get("http://localhost:8280/event/getEvent").then(res=>{
             if(res.data.success){
                 this.setState({
                     EventReservations:res.data.existingEvent
@@ -56,7 +56,7 @@ export default class AllEventReservations extends Component{
                     'success'
                 )
 
-                axios.delete(`http://localhost:8004/postEvent/delete/${id}`).then((res)=>{;
+                axios.delete(`http://localhost:8280/event/deleteEvent/${id}`).then((res)=>{;
                     this.retriveEventReservations();
                 })
 
@@ -90,7 +90,7 @@ export default class AllEventReservations extends Component{
     
     handleserchArea=(e)=>{
         const searchKey=e.currentTarget.value;
-        axios.get("http://localhost:8004/postEvent").then(res=>{
+        axios.get("http://localhost:8280/event/getEvent").then(res=>{
             if(res.data.success){
                 this.filterData(res.data.existingEvent,searchKey)
             }

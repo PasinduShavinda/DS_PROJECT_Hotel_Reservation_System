@@ -85,7 +85,7 @@ export default class EditEventBook extends Component{
            
           console.log(data);
 
-          axios.put(`http://localhost:8004/postEvent/update/${id}`).then((res)=>{
+          axios.put(`http://localhost:8280/event/updateEvent/${id}`).then((res)=>{
               if(res.data.success){
                   Swal.fire({
                     title: "your reseration details has been saved",
@@ -122,7 +122,7 @@ export default class EditEventBook extends Component{
     componentDidMount(){
 
         const id=this.props.match.params.id;
-        axios.get(`http://localhost:8004/postEvent/${id}`).then((res)=>{
+        axios.get(`http://localhost:8280/event/getEvent/${id}`).then((res)=>{
     
         if (res.data.success){
             this.setState({

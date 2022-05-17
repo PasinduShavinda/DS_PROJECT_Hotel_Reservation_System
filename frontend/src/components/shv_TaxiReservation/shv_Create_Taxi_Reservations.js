@@ -80,7 +80,7 @@ export default class Shv_Create_Taxi_Reservations extends Component {
     
       
     }else{
-    axios.post("http://localhost:8001/postTaxi/save",data).then((res) =>{
+    axios.post("http://localhost:8280/taxi/saveTaxi",data).then((res) =>{
       if(res.data.success){
         this.setState(
           {

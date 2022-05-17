@@ -68,7 +68,7 @@ export default class EditReservation extends Component{
           }
         
         console.log(data);
-        axios.put(`http://localhost:8002/room-reservation/update/${id}`,data).then((res)=>{
+        axios.put(`http://localhost:8280/room/updateRoom/${id}`,data).then((res)=>{
             if(res.data.success){
 
                
@@ -109,7 +109,7 @@ export default class EditReservation extends Component{
           componentDidMount(){
 
             const id=this.props.match.params.id;
-            axios.get(`http://localhost:8002/room-reservation/${id}`).then((res)=>{
+            axios.get(`http://localhost:8280/room/getRoom/${id}`).then((res)=>{
         
             if (res.data.success){
                 this.setState({

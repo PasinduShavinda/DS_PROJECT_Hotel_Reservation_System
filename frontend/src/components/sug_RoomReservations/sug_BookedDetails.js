@@ -24,7 +24,7 @@ class RoomBill extends Component{
         
         
         retriveReservation(){
-        axios.get("http://localhost:8002/").then(res=>{
+        axios.get("http://localhost:8280/room/getLastRoom").then(res=>{
         if(res.data.success){
             this.setState({
                 reservations:res.data.existingReservations
@@ -66,7 +66,7 @@ onDelete= (id) =>{
           window.location = "/";
       });
   
-         axios.delete(`http://localhost:8002/room-reservation/delete/${id}`).then((res)=>{
+         axios.delete(`http://localhost:8280/room/deleteRoom/${id}`).then((res)=>{
         // alert("Delete successfully");
           this.retriveReservations();
       }).then( window.location ="/")

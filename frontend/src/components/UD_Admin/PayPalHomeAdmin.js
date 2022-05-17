@@ -16,7 +16,7 @@ class PayPalHomeAdmin extends Component {
     this.retrievePaypalPosts();
   }
   retrievePaypalPosts() {
-    axios.get("http://localhost:8003/postPaypal").then((res) => {
+    axios.get("http://localhost:8280/paypal/getPaypal").then((res) => {
       if (res.data.success) {
         this.setState({
           PaypalPosts: res.data.existingpaypal,
@@ -38,7 +38,7 @@ class PayPalHomeAdmin extends Component {
     }).then((willDelete) => {
       if (willDelete) {
         axios
-          .delete(`http://localhost:8003/postPaypal/delete/${id}`)
+          .delete(`http://localhost:8280/paypal/deletePaypal/${id}`)
           .then((res) => {
             swal("Deleted Successfully");
             this.retrievePaypalPosts();
@@ -68,7 +68,7 @@ class PayPalHomeAdmin extends Component {
   handleSearchArea = (e) => {
     const searchKey = e.currentTarget.value;
 
-    axios.get("http://localhost:8003/postPaypal").then((res) => {
+    axios.get("http://localhost:8280/paypal/getPaypal").then((res) => {
       if (res.data.success) {
         this.filterData(res.data.existingpaypal, searchKey);
       }

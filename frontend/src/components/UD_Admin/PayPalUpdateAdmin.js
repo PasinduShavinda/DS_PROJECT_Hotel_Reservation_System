@@ -100,7 +100,7 @@ class PayPalUpdateAdmin extends Component {
     //validation end here
 
     axios
-      .put(`http://localhost:8003/postPaypal/update/${id}`, data)
+      .put(`http://localhost:8280/paypal/updatePaypal/${id}`, data)
       .then((res) => {
         if (res.data.success) {
           alert("Paypal updated successfully");
@@ -119,7 +119,7 @@ class PayPalUpdateAdmin extends Component {
     const id = this.props.match.params.id;
 
     //post/${id}/
-    axios.get(`http://localhost:8003/postPaypal/${id}`).then((res) => {
+    axios.get(`http://localhost:8280/paypal/getPaypal/${id}`).then((res) => {
       if (res.data.success) {
         this.setState({
           cpayment: res.data.paypal.cpayment,

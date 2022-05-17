@@ -114,7 +114,7 @@ export default class Shv_Update_Taxi_Reservations extends Component {
       );
     } else {
       axios
-        .put(`http://localhost:8001/postTaxi/update/${id}`, data)
+        .put(`http://localhost:8280/room/updateRoom/${id}`, data)
         .then((res) => {
           if (res.data.success) {
             swal("Successful!", "Taxi Details Updated !", "success");
@@ -140,7 +140,7 @@ export default class Shv_Update_Taxi_Reservations extends Component {
   componentDidMount() {
     const id = this.props.match.params.id;
 
-    axios.get(`http://localhost:8001/postTaxi/${id}`).then((res) => {
+    axios.get(`http://localhost:8280/taxi/getTaxi/${id}`).then((res) => {
       if (res.data.success) {
         this.setState({
           fistName: res.data.taxi.fistName,

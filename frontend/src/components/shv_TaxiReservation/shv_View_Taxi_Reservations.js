@@ -18,7 +18,7 @@ export default class Shv_View_Taxi_Reservations extends Component {
 
     const id = this.props.match.params.id;
 
-    axios.get(`http://localhost:8001/postTaxi/${id}`).then((res) =>{
+    axios.get(`http://localhost:8280/taxi/getTaxi/${id}`).then((res) =>{
 
       if(res.data.success){
         this.setState({

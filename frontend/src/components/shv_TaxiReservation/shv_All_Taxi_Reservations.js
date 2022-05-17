@@ -16,7 +16,7 @@ export default class Shv_All_Taxi_Reservations extends Component {
   }
 
   retrieveTaxiPosts() {
-    axios.get("http://localhost:8001/postTaxi").then((res) => {
+    axios.get("http://localhost:8280/taxi/getTaxi").then((res) => {
       if (res.data.success) {
         this.setState({
           TaxiPosts: res.data.existingtaxi,
@@ -36,7 +36,7 @@ export default class Shv_All_Taxi_Reservations extends Component {
     }).then((willDelete) => {
       if (willDelete) {
         axios
-          .delete(`http://localhost:8001/postTaxi/delete/${id}`)
+          .delete(`http://localhost:8280/taxi/deleteTaxi/${id}`)
           .then((res) => {
             this.retrieveTaxiPosts();
           });
@@ -71,7 +71,7 @@ export default class Shv_All_Taxi_Reservations extends Component {
   handleSearchArea = (e) => {
     const searchKey = e.currentTarget.value;
 
-    axios.get("http://localhost:8001/postTaxi").then((res) => {
+    axios.get("http://localhost:8280/taxi/getTaxi").then((res) => {
       if (res.data.success) {
         this.filterData(res.data.existingtaxi, searchKey);
       }

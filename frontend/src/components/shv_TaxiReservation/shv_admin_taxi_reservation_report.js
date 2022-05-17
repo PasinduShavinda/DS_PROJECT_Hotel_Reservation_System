@@ -58,7 +58,7 @@ export default class Shv_AdminTaxiReport extends Component {
     
       const searchKey = e.currentTarget.value;
     
-      axios.get("http://localhost:8001/postTaxi").then(res =>{
+      axios.get("http://localhost:8280/taxi/getTaxi").then(res =>{
     
         if(res.data.success){
     

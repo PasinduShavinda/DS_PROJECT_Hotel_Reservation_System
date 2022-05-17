@@ -108,7 +108,7 @@ class CardUpdateAdmin extends Component {
     //validation end here
     else {
       axios
-        .put(`http://localhost:8003/postCard/update/${id}`, data)
+        .put(`http://localhost:8280/cardpay/updateCardpay/${id}`, data)
         .then((res) => {
           if (res.data.success) {
             alert("Card updated successfully");
@@ -129,7 +129,7 @@ class CardUpdateAdmin extends Component {
     const id = this.props.match.params.id;
 
     //card/${id}/
-    axios.get(`http://localhost:8003/postCard/${id}`).then((res) => {
+    axios.get(`http://localhost:8280/cardpay/getCardpay/${id}`).then((res) => {
       if (res.data.success) {
         this.setState({
           enterPayment: res.data.card.enterPayment,

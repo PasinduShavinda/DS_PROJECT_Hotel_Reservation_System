@@ -87,7 +87,7 @@ export default class EventBook extends Component{
            
           console.log(data);
 
-          axios.post(`http://localhost:8004/postEvent/save`,data).then((res)=>{
+          axios.post(`http://localhost:8280/event/saveEvent`,data).then((res)=>{
               if(res.data.success){
                   Swal.fire({
                     title: "your reseration details has been saved",

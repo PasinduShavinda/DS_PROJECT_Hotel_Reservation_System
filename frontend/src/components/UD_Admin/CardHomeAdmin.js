@@ -17,7 +17,7 @@ class CardHomeAdmin extends Component {
   }
 
   retrieveCardPosts() {
-    axios.get("http://localhost:8003/postCard").then((res) => {
+    axios.get("http://localhost:8280/cardpay/getCardpay").then((res) => {
       if (res.data.success) {
         this.setState({
           CardPosts: res.data.existingcard,
@@ -39,7 +39,7 @@ class CardHomeAdmin extends Component {
     }).then((willDelete) => {
       if (willDelete) {
         axios
-          .delete(`http://localhost:8003/postCard/delete/${id}`)
+          .delete(`http://localhost:8280/cardpay/deleteCardpay/${id}`)
           .then((res) => {
             swal("Deleted Successfully");
             this.retrieveCardPosts();
@@ -69,7 +69,7 @@ class CardHomeAdmin extends Component {
   handleSearchArea = (e) => {
     const searchKey = e.currentTarget.value;
 
-    axios.get("http://localhost:8003/postCard").then((res) => {
+    axios.get("http://localhost:8280/cardpay/saveCardpay").then((res) => {
       if (res.data.success) {
         this.filterData(res.data.existingcard, searchKey);
       }

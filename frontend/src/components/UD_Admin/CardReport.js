@@ -19,7 +19,7 @@ class CardReport extends Component {
   }
 
   retrieveCardPosts() {
-    axios.get("http://localhost:8003/postCard").then((res) => {
+    axios.get("http://localhost:8280/cardpay/getCardpay").then((res) => {
       if (res.data.success) {
         this.setState({
           CardPosts: res.data.existingcard,
@@ -44,7 +44,7 @@ class CardReport extends Component {
   handleSearchArea = (e) => {
     const searchKey = e.currentTarget.value;
 
-    axios.get("http://localhost:8003/postCard").then((res) => {
+    axios.get("http://localhost:8280/cardpay/getCardpay").then((res) => {
       if (res.data.success) {
         this.filterData(res.data.existingcard, searchKey);
       }

@@ -17,7 +17,7 @@ componentDidMount(){
 }
 
 retriveReservations(){
-axios.get("http://localhost:8002/room-reservation").then(res=>{
+axios.get("http://localhost:8280/room/getRoom").then(res=>{
   if(res.data.success){
   this.setState({
     Reservations:res.data.existingReservation
@@ -55,7 +55,7 @@ onDelete= (id) =>{
         'success'
       )
 
-       axios.delete(`http://localhost:8002/room-reservation/delete/${id}`).then((res)=>{
+       axios.delete(`http://localhost:8280/room/deleteRoom/${id}`).then((res)=>{
       // alert("Delete successfully");
         this.retriveReservations();
     })
@@ -93,7 +93,7 @@ filterData(Reservations,searchKey){
   
   handleserchArea=(e)=>{
   const searchKey=e.currentTarget.value;
-  axios.get("http://localhost:8002/room-reservation").then(res=>{
+  axios.get("http://localhost:8280/room/getRoom").then(res=>{
     if(res.data.success){
     this.filterData(res.data.existingReservation,searchKey)
       

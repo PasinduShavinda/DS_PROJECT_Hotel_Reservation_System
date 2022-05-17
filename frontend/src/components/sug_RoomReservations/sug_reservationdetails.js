@@ -15,7 +15,7 @@ export default class ReservationDetails extends Component{
     componentDidMount(){
     
         const id=this.props.match.params.id;
-        axios.get(`http://localhost:8002/room-reservation/${id}`).then((res)=>{
+        axios.get(`http://localhost:8280/room/getRoom/${id}`).then((res)=>{
     
         if (res.data.success){
             this.setState({

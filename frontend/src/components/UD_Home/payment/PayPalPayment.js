@@ -103,7 +103,7 @@ class PayPalPayment extends Component {
     //validation end here
     else {
       axios
-        .post("http://localhost:8003/postPaypal/save", Paypal)
+        .post("http://localhost:8280/paypal/savePayPal", Paypal)
         .then((response) => {
           if (response.data.success) {
             swal("Payment successfully added!");

@@ -130,7 +130,7 @@ export default class RoomBook extends Component{
             }
            
           console.log(data);
-          axios.post(`http://localhost:8002/room-reservation/save`,data).then((res)=>{
+          axios.post(`http://localhost:8280/room/saveRoom`,data).then((res)=>{
               if(res.data.success){
                
   

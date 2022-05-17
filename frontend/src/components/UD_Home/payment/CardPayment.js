@@ -118,7 +118,7 @@ class CardPayment extends Component {
     } else if (cvc.length > 3) {
       swal("Invalid CVC Number", "CVC should contain 3 numbers only!", "error");
     } else {
-      axios.post("http://localhost:8003/postCard/save", data).then((res) => {
+      axios.post("http://localhost:8280/cardpay/saveCardpay", data).then((res) => {
         if (res.data.success) {
           swal("payment successfully added!");
           this.props.history.push("/success");
