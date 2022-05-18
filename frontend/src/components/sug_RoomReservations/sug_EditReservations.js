@@ -68,7 +68,7 @@ export default class EditReservation extends Component{
           }
         
         console.log(data);
-        axios.put(`http://localhost:8280/room/updateRoom/${id}`,data).then((res)=>{
+        axios.put(`http://localhost:8280/room/updateSecondRoom/${id}`,data).then((res)=>{
             if(res.data.success){
 
                

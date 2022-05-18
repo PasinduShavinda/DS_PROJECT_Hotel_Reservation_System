@@ -164,9 +164,6 @@ onChange={this.handleserchArea}>
 
 
  <td>
-<a className="btn btn-warning" href={`/editReservation/${Reservations._id}`}>
-     <i className="fas fa-edit"></i>&nbsp;Edit
-   </a>
    &nbsp; &nbsp; &nbsp; &nbsp;
    <a className="btn btn-danger" onClick={()=>this.onDelete(Reservations._id)}>
      <i className="fas fa-edit"></i>&nbsp;Delete
