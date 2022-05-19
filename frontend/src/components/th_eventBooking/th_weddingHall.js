@@ -60,7 +60,8 @@ export default class WeddingHall extends Component{
                         <h2 style={{color:'#f07a12'}}>Grand Ballroom</h2>
 
                         <p>Looking more luxurious than ever, the Grand ballroom at Hilton hotel offers a fine space for your special event. 
-                        With the package for this venue comes complimentary benefits such as a fully air-conditioned, changing room for the bride and a one-night stay for the couple with breakfast at the all-day dining restaurant. </p>
+                        With the package for this venue comes complimentary benefits such as a fully air-conditioned, changing room for the bride and a one-night stay for the couple with breakfast at the all-day dining restaurant.
+                        Let us plan your special wedding in an amazing grand receprtion hall.</p>
 
                         <br></br>
 

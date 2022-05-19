@@ -38,12 +38,12 @@ const eventSchema = new mongoose.Schema({
 
     eventType:{
         type:String,
-        required:true
+      
     },
 
     eventHall:{
         type:String,
-        required:true
+        
     }
 
 });

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2'
+import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
-import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
+
 
 
 export default class EditEventBook extends Component{
@@ -11,64 +12,38 @@ export default class EditEventBook extends Component{
     constructor(props){
         super(props);
         this.state={
-          errors:{},
+          
             fullName:"",
             email:"",
             nic:"",
             mobileNumber:"",
             bookingDate:"",
             bookingTime:"",
-            numberOfGuests:0,
+            numberOfGuests:"",
             eventType:"",
             eventHall:"",
           
         }
     }
-        
-        
+
     handleInputChange = (e) =>{
-        const {fullName,value}=e.target;
-        if (e.target.selected) {
-            this.setState({ [fullName]: e.target.value });
-        }
-       
-        this.setState({
+      const {name,value}=e.target;
+      if (e.target.selected) {
+        this.setState({ [name]: e.target.value });
+      }
+   
+      this.setState({
         ...this.state,
-           [fullName]:value 
-          })  
+        [name]:value 
+        })  
     }
-
-
-
-        formValidation=()=>{
-            const{fullName,email}=this.state;
-            let isValid=true;
-            const errors={};
-          
-          
-          if(fullName.trim().length===0||email.trim().length===0){
-            Swal.fire({
-              icon: 'error',
-              title: 'Oops...',
-              text: 'A required feild is missing .Please fill out all required fields and try again',
-            })
-            isValid=false; 
-          }
-          if(!email.includes("@")){
-            errors.email="Enter valid Email adress";
-            isValid=false;
-          }
-
-           this.setState({errors});
-           return isValid;
-        }
-
          
         onSubmit=(e)=>{
         e.preventDefault();
         const id=this.props.match.params.id;
 
-        const{fullName,email,nic,mobileNumber,bookingDate,bookingTime,numberOfGuests,eventType,eventHall}=this.state;
+  
+            const{fullName,email,nic,mobileNumber,bookingDate,bookingTime,numberOfGuests,eventType,eventHall}=this.state;
         
             const data={
               fullName:fullName,
@@ -85,17 +60,18 @@ export default class EditEventBook extends Component{
            
           console.log(data);
 
-          axios.put(`http://localhost:8280/event/updateEvent/${id}`).then((res)=>{
+          axios.put(`http://localhost:8280/event/updateEvent/${id}`,data).then((res)=>{
               if(res.data.success){
                   Swal.fire({
                     title: "your reseration details has been saved",
                     type: "success",
                     showConfirmButton: true,
-                    confirmButtonText: 'View the Bill',
+                    confirmButtonText: 'View the Reservation',
                     icon: 'success',
+             
                 }).then(function() {
-                    window.location = "/bookeddetails";
-                });
+                  window.location = "/AllEventReservations";
+              });;
                       
                 this.setState(
                 {
@@ -121,41 +97,43 @@ export default class EditEventBook extends Component{
 
     componentDidMount(){
 
-        const id=this.props.match.params.id;
-        axios.get(`http://localhost:8280/event/getEvent/${id}`).then((res)=>{
-    
-        if (res.data.success){
-            this.setState({
-               
-                fullName:res.data.eventBooking.fullName,
-                email:res.data.eventBooking.email,
-                nic:res.data.eventBooking.nic,
-                mobileNumber:res.data.eventBooking.mobileNumber,
-                bookingDate:res.data.eventBooking.bookingDate,
-                bookingTime:res.data.eventBooking.bookingTime,
-                numberOfGuests:res.data.eventBooking.numberOfGuests,
-                eventType:res.data.eventBooking.eventType,
-                eventHall:res.data.eventBooking.eventHall,
-                
-            });
-            console.log(this.state.eventBooking);
-        }
-    
-    
-        })
-    }
+      const id=this.props.match.params.id;
+      axios.get(`http://localhost:8280/event/getEvent/${id}`).then((res)=>{
+  
+      if (res.data.success){
+          this.setState({
+             
+              fullName:res.data.EventReservation.fullName,
+              email:res.data.EventReservation.email,
+              nic:res.data.EventReservation.nic,
+              mobileNumber:res.data.EventReservation.mobileNumber,
+              bookingDate:res.data.EventReservation.bookingDate,
+              bookingTime:res.data.EventReservation.bookingTime,
+              numberOfGuests:res.data.EventReservation.numberOfGuests,
+              eventType:res.data.EventReservation.eventType,
+              eventHall:res.data.EventReservation.eventHall,
+              
+          });
+          console.log(this.state.EventReservation);
+      }
+  
+  
+      })
+  }
  
     render() {
+        
     
         return(
-            <div class="col-md-8 mt-4 mx-auto">
+                            <div class="col-md-8 mt-4 mx-auto">
                             <h1 className="h3 mb-3 font-weight-normal">Reserve an Event Hall</h1>
                       
-                            <form className="need-validation" noValidate onSubmit={this.onSubmit}>
+                            <form  onSubmit={this.onSubmit}>
                       
                               <div className="form-group" style={{marginBottom:'15px'}}>
-                              <label style={{marginBottom:'5px'}}>Full Name</label><br></br>
-                              <input type="text" className="form-control" 
+                              <label class="form-label" for="form3Example1c">Full Name</label><br></br>
+                              <input type="text" 
+                                className="form-control" 
                                 name="fullName"
                                 placeholder="Enter the your name"
                                 value={this.state.fullName}
@@ -202,16 +180,15 @@ export default class EditEventBook extends Component{
                                 onChange={this.handleInputChange}/>
                               </div>
                       
-                              <div className="form-group" style={{marginBottom:'15px'}}>
-                                <label style={{marginBottom:'5px'}}>Event Time</label><br></br>
-
-                                <input type="radio" id="day" name="bookingTime" value="Day"></input>
-                                <label for="day">Day</label>
-                                <br></br>
-                                <input type="radio" id="night" name="bookingTime" value="Night"></input>
-                                <label for="night">Night</label>
-                                <br></br>
-
+                              <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                  <label class="form-label" for="form3Example4cd">Select Event Time</label>
+                                    <select class="form-select" name="bookingTime" aria-label="Disabled select example"  onChange={this.handleInputChange}>
+                                      <option value="" disabled selected hidden></option>
+                                      <option  value="Day-time">Day Time</option>
+                                      <option  value="Night-time">Night Time</option>
+                                    </select>
+                                </div>
                               </div>
                       
                               <div className="form-group" style={{marginBottom:'15px'}}>
@@ -223,18 +200,54 @@ export default class EditEventBook extends Component{
                                 value={this.state.numberOfGuests}
                                 onChange={this.handleInputChange}/>
                               </div>
+
+
+                              <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                  <label class="form-label" for="form3Example4cd">Select Event Reception Type</label>
+                                    <select class="form-select" name="eventType" aria-label="Disabled select example"  onChange={this.handleInputChange}>
+                                      <option value="" disabled selected hidden></option>
+                                      <option  value="Wedding Hall">Wedding Hall</option>
+                                      <option  value="Outdoor Functions">Outdoor Functions</option>
+                                      <option value="Special Activities">Special Activities</option>
+                                    </select>
+                                </div>
+                              </div>
+
+                              <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                  <label class="form-label" for="form3Example4cd">Select Event Hall Name</label>
+                                    <select class="form-select" name="eventHall" aria-label="Disabled select example"  onChange={this.handleInputChange}>
+                                      <option value="" disabled selected hidden></option>
+                                      <option  value="Grand Ballroom">Grand Ballroom</option>
+                                      <option  value="Ivy Ballroom">Ivy Ballroom</option>
+                                      <option value="Crystal Ballroom">Crystal Ballroom</option>
+                                      <option value="Garden Functions">Garden Functions</option>
+                                      <option value="Beach Functions">Beach Functions</option>
+                                      <option value="Rooftop Functions">Rooftop Functions</option>
+                                      <option value="Meeting Rooms">Meeting Rooms</option>
+                                      <option value="Camping suits">Camping suits</option>
+                                      <option value="Poolside function">Poolside function</option>
+                                    </select>
+                                </div>
+                              </div>
                       
                       
                               <button type="submit" class="btn btn-success" style={{marginBottom:'15px'}} onClick={this.onSubmit}>
                                 <i className="far fa-check-square"></i>
-                                &nbsp;Update
+                                &nbsp;Reserve
                               </button>
-                      
-                              
+                                                  
                               
                             </form>
                       
                             </div>
+                          
 
-    );
+                            
+
+);
+                          
+                            
+    
     }}

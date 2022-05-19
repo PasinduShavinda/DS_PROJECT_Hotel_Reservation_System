@@ -183,7 +183,7 @@ export default class SpecialActivities extends Component{
 
                         <p>At our Garden Poolside, we offer tropically traditional ceremonies. 
                         The lush poolside will transport you to a faraway resort as we put all the right elements together for you to host ceremonies, surrounded by trees, blue waters and all your loved ones gathered around the poolside to witness your special day. 
-                        At Hilton Hotel we do outdoor weddings just right, offering many ways in which you can bring your nuptial concept to life.</p>
+                        At Hilton Hotel we offering many ways in which you can bring your nuptial concept to life.</p>
 
 
                         <br></br>

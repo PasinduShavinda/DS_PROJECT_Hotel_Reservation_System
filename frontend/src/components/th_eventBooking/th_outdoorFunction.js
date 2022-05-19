@@ -180,7 +180,7 @@ export default class OutdoorFunction extends Component{
 
                         <p>Hilton hotel has some of the best outdoor rooftop bars in the country,
                              where people can enjoy the sizzling warm weather and take in amazing city views. There are so many reasons for that such as Perfect for Hosting Cocktail Receptions on-site,
-                             Great Choice for Guests to Mingle on Their Own, Guests Will Rave About the Venue Choice. So let's celebrate ypur valuable day in a different way.</p>
+                             Great Choice for Guests to Mingle on Their Own, Guests Will Rave About the Venue Choice. So let us celebrate yoour most special day in a different way.</p>
 
 
                         <br></br>

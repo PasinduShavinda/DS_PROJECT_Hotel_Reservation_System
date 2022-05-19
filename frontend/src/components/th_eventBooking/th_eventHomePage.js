@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import "./styles/th_style.css";
 
-
-
 export default class eventHomePage extends Component{
 
   render() {
@@ -16,11 +14,12 @@ export default class eventHomePage extends Component{
                 <div class="row">
                     <div class="col-lg-6 col-lg-offset-3">
                         
-                        <h1>Wedding Halls and Other Occasions</h1>
+                        <h1>Wedding Halls & Other Occasions</h1>
                         <h3>For Most Beautiful Occasions</h3>
                         
                         <a href='/AllEventReservations'><button type="button" class="btn btn-outline-light btn-lg">All Reservations</button></a>
                         
+                        <br></br>
                     </div>
                 </div>
             </div> 

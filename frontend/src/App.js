@@ -54,6 +54,7 @@ import EventBook from "./components/th_eventBooking/th_eventBooking";
 import EditEventBook from "./components/th_eventBooking/th_editEventBDetails";
 import EventReservationDetails from "./components/th_eventBooking/th_eventReservationDetails";
 
+
 export default class App extends Component {
   render() {
     return (
@@ -139,8 +140,9 @@ export default class App extends Component {
             <Route path="/SpecialActivities" exact component={SpecialActivities}></Route>
             <Route path="/AllEventReservations" exact component={AllEventReservations}></Route>
             <Route path="/EventBook" exact component={EventBook}></Route>
-            <Route path="/EditEventBook" exact component={EditEventBook}></Route>
+            <Route path="/EditEventBook/:id" exact component={EditEventBook}></Route>
             <Route path="/EventReservationDetails" exact component={EventReservationDetails}></Route>
+
         </BrowserRouter>
         <br />
         <br />
