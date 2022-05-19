@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Shv_Taxi_NavBar from "../shv_NavBars/shv_Taxi_NavBar";
 import axios from "axios";
 import swal from "sweetalert";
 
@@ -165,8 +164,6 @@ export default class Shv_Update_Taxi_Reservations extends Component {
   render() {
     return (
       <div>
-        <Shv_Taxi_NavBar />
-
         <div>
           <div className="card">
             <div>

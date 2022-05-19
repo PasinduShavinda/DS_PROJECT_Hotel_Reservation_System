@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import swal from 'sweetalert';
 import Swal from 'sweetalert2';
-import Shv_Taxi_NavBar from '../shv_NavBars/shv_Taxi_NavBar';
 
 export default class Shv_Create_Taxi_Reservations extends Component {
 
@@ -141,7 +140,7 @@ export default class Shv_Create_Taxi_Reservations extends Component {
   render() {
     return (
     <div>
-      <Shv_Taxi_NavBar/>
+  
       
       <div className="container border"
 

@@ -31,7 +31,7 @@ export default class admindashbord extends Component {
                 
                
                 <div class="col-lg-6">
-                <a href='/#' style={{textDecoration:'none' ,color:'black'}}>
+                <a href='/AllEventReservations' style={{textDecoration:'none' ,color:'black'}}>
                     <div class="tm-bg-white-transparent tm-app-feature-box">
                         <div class="tm-app-feature-icon-container">
                             <i class="fas fa-3x fa fa-university tm-app-feature-icon"></i>
@@ -60,7 +60,7 @@ export default class admindashbord extends Component {
                 </div>
 
                 <div class="col-lg-6">
-                <a href='/#' style={{textDecoration:'none' ,color:'black'}}>
+                <a href='/adminHome' style={{textDecoration:'none' ,color:'black'}}>
                     <div class="tm-bg-white-transparent tm-app-feature-box">
                         <div class="tm-app-feature-icon-container">
                             <i class="fas fa-3x fa fa-money tm-app-feature-icon"></i>

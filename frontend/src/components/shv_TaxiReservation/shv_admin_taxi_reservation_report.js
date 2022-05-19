@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import Shv_Taxi_NavBar from '../shv_NavBars/shv_Taxi_NavBar';
 import jsPdf from 'jspdf'
 import 'jspdf-autotable'
 
@@ -93,7 +92,7 @@ export default class Shv_AdminTaxiReport extends Component {
   render() {
     return (
         <div>
-          <Shv_Taxi_NavBar/>
+
 
         <div>
   
