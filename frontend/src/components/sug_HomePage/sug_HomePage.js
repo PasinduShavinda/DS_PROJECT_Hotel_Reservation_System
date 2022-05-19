@@ -41,16 +41,27 @@ export default class HomePage extends Component{
      <div class="row centered mt mb">
        
        <h1  class="d-flex justify-content-center">Our services</h1>
+       <center><p><b>Click On the Image Of Your Choice !!</b></p></center>
        
        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
          <a href="/roomhomepage"><img src="assets/img/portfolio/room.jpg" class="img-responsive"/></a>
+        <center><p><b>Room Reservation</b></p></center>
        </div>
        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
          <a href="/eventHome"><img src="assets/img/portfolio/event.jpg" class="img-responsive"/></a>
+         <center><p><b>Event Reservation</b></p></center>
        </div>
        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
          <a href="/TaxiAdminClient"><img src="assets/img/portfolio/taxi.jpg" class="img-responsive"/></a>
+         <center><p><b>Taxi Reservation</b></p></center>
        </div>
+       <center>
+       <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+         <a href="/location"><img src="https://1gr.cz/fotky/idnes/20/121/cl5/DVR87f020_gmapy00.png" class="img-responsive"/></a>
+         <center><p><b> Hotel Location</b></p></center>
+       </div>
+       </center>
+     
      
       
       
