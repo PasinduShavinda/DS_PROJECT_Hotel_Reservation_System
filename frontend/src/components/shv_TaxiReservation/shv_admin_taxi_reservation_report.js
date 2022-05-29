@@ -97,7 +97,7 @@ export default class Shv_AdminTaxiReport extends Component {
         <div>
   
             <center>
-            <h3 style = {{marginTop:'5%'}}><font face = "Comic sans MS" size ="6"><b>Reserved Taxis</b></font></h3>
+            <h3 style = {{marginTop:'5%'}}><font face = "Comic sans MS" size ="6"><b>Report Reserved Taxis</b></font></h3>
             </center>
             <br/>
        
