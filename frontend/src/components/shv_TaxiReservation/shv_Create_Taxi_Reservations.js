@@ -66,18 +66,19 @@ export default class Shv_Create_Taxi_Reservations extends Component {
      const con = /^[0-9\b]+$/;
      const Temail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
      const name = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
+     const nicc = /^([0-9]{9}[x|X|v|V]|[0-9]{12})$/;
      if(fistName.length == 0 || lastName.length == 0 || mobileNumber.length == 0 || nic.length == 0 || email.length == 0 || typeoftaxi.length == 0 || condition.length == 0 || bookingDate.length == 0 || bookingTime.length == 0 || numberOfPassengers.length == 0 || pickupAddress.length == 0 || dropOffAddress.length == 0 ){
-      swal("Feilds Cannot Be empty !!", "You Must fill all the feilds !!");
+      swal("Feilds Cannot Be empty !!", "You Must fill all the feilds !!", "error");
     }else if((!con.test(String(mobileNumber)))||(mobileNumber.length != 10)){
       swal("Invalid Contact Number !", "Please enter valid contact number !", "error");
     }else if((!Temail.test(String(email)))){
       swal("Invalid email address !", "Please enter valid email address !", "error");
     }else if((!name.test(String(fistName)))){
       swal("Invalid Name !", "Name cannot contain numbers ! Please enter valid name !", "error");
-    }else if((!name.test(String(lastName)))){
-      swal("Invalid Name !", "Name cannot contain numbers ! Please enter valid name !", "error");
+    }else if((!nicc.test(String(nic)))){
+      swal("Invalid NIC !", "Please enter valid NIC !", "error");
     
-      
+  
     }else{
     axios.post("http://localhost:8280/taxi/saveTaxi",data).then((res) =>{
       if(res.data.success){
@@ -123,7 +124,7 @@ export default class Shv_Create_Taxi_Reservations extends Component {
         fistName:"Kamal",
         lastName:"Perera",
         mobileNumber:"0788899887",
-        nic:"675565433V",
+        nic:"942281632v",
         email:"Kamal@gmail.com",
         typeoftaxi:"Van",
         condition:"Npn A/C",
@@ -171,7 +172,7 @@ export default class Shv_Create_Taxi_Reservations extends Component {
               <input type="text"
               className="form-control"
               name="fistName"
-              placeholder="Enter fistName"
+              placeholder="Fist Name"
               value={this.state.fistName}
               onChange={this.handleInputChange}
               required/>
@@ -182,7 +183,7 @@ export default class Shv_Create_Taxi_Reservations extends Component {
               <input type="text"
               className="form-control"
               name="lastName"
-              placeholder="lastName"
+              placeholder="Last Name"
               value={this.state.lastName}
               onChange={this.handleInputChange}
               required/>
@@ -194,7 +195,7 @@ export default class Shv_Create_Taxi_Reservations extends Component {
               <input type="number"
               className="form-control"
               name="mobileNumber"
-              placeholder="Enter contact number"
+              placeholder="Contact Number"
               value={this.state.mobileNumber}
               onChange={this.handleInputChange}
               required/>
@@ -205,7 +206,7 @@ export default class Shv_Create_Taxi_Reservations extends Component {
               <input type="text"
               className="form-control"
               name="nic"
-              placeholder="Enter nic"
+              placeholder="NIC"
               value={this.state.nic}
               onChange={this.handleInputChange}
               required/>
@@ -216,7 +217,7 @@ export default class Shv_Create_Taxi_Reservations extends Component {
               <input type="text"
               className="form-control"
               name="email"
-              placeholder="Enter email"
+              placeholder="Email"
               value={this.state.email}
               onChange={this.handleInputChange}
               required/>

@@ -103,8 +103,8 @@ export default class Shv_AdminTaxiReport extends Component {
        
         
         <nav className="navbar navbar-light bg-light">
-  
-        <button className="btn-primary" onClick={this.jsPdfGenerator}>Generate Report PDF</button>
+
+        <button className="btn btn-danger" onClick={this.jsPdfGenerator}>Generate Report PDF</button>
 
          
           <form className="form-inline">
@@ -172,6 +172,7 @@ export default class Shv_AdminTaxiReport extends Component {
            <br/><br/><br/>
       
          </div> 
+         &nbsp;<a href = "/"><button className="btn btn-info">Back</button></a>
          </div>
     )
   }

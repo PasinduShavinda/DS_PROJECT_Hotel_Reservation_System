@@ -132,7 +132,9 @@ export default class Shv_Update_Taxi_Reservations extends Component {
               dropOffAddress: "",
             });
           }
-        });
+        }).then(function() {
+          window.location = "/AllTaxi";
+      });
     }
   };
 
