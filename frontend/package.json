@@ -22,7 +22,7 @@
     "web-vitals": "^2.1.4",
     "react-addons-shallow-compare": "^15.6.2",
     "react-dates": "^18.0.2",
-    "sweetalert2": "^11.4.10",
+    "sweetalert2": "^11.7.27",
     "react-to-print": "^2.13.0"
   },
   "scripts": {
